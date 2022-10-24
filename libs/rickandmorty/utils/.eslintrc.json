@@ -14,11 +14,19 @@
       "rules": {
         "@angular-eslint/directive-selector": [
           "error",
-          { "type": "attribute", "prefix": "ngx-ssr", "style": "camelCase" }
+          {
+            "type": "attribute",
+            "prefix": "ngx-ssr",
+            "style": "camelCase"
+          }
         ],
         "@angular-eslint/component-selector": [
           "error",
-          { "type": "element", "prefix": "ngx-ssr", "style": "kebab-case" }
+          {
+            "type": "element",
+            "prefix": "ngx-ssr",
+            "style": "kebab-case"
+          }
         ]
       }
     },
