@@ -26,30 +26,6 @@
       }
     }
   },
-  "projects": {
-    "rickandmorty": {
-      "tags": []
-    },
-    "rickandmorty-e2e": {
-      "tags": [],
-      "implicitDependencies": ["rickandmorty"]
-    },
-    "ngx-ssr-cache": {
-      "tags": []
-    },
-    "rickandmorty-api": {
-      "tags": []
-    },
-    "rickandmorty-utils": {
-      "tags": []
-    },
-    "ngx-ssr-timeout": {
-      "tags": []
-    },
-    "ngx-ssr-platform": {
-      "tags": []
-    }
-  },
   "targetDependencies": {
     "build": [
       {

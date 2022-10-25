@@ -44,7 +44,8 @@
             }
           }
         }
-      }
+      },
+      "tags": []
     },
     "ngx-ssr-platform": {
       "projectType": "library",
@@ -89,7 +90,8 @@
             }
           }
         }
-      }
+      },
+      "tags": []
     },
     "ngx-ssr-timeout": {
       "projectType": "library",
@@ -134,7 +136,8 @@
             }
           }
         }
-      }
+      },
+      "tags": []
     },
     "rickandmorty": {
       "projectType": "application",
@@ -286,7 +289,8 @@
             "functionsNodeVersion": 12
           }
         }
-      }
+      },
+      "tags": []
     },
     "rickandmorty-api": {
       "projectType": "library",
@@ -331,7 +335,8 @@
             }
           }
         }
-      }
+      },
+      "tags": []
     },
     "rickandmorty-e2e": {
       "root": "apps/rickandmorty-e2e",
@@ -357,7 +362,9 @@
             "lintFilePatterns": ["apps/rickandmorty-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["rickandmorty"]
     },
     "rickandmorty-utils": {
       "projectType": "library",
@@ -382,7 +389,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
     }
   }
 }
