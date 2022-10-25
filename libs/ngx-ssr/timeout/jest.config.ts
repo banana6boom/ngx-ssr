@@ -1,6 +1,6 @@
 module.exports = {
-  displayName: 'rickandmorty',
-  preset: '../../jest.preset.js',
+  displayName: 'ngx-ssr-timeout',
+
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -9,11 +9,12 @@ module.exports = {
       tsconfig: '<rootDir>/tsconfig.spec.json',
     },
   },
-  coverageDirectory: '../../coverage/apps/rickandmorty',
+  coverageDirectory: '../../../coverage/libs/ngx-ssr/timeout',
   snapshotSerializers: [
     'jest-preset-angular/build/serializers/no-ng-attributes',
     'jest-preset-angular/build/serializers/ng-snapshot',
     'jest-preset-angular/build/serializers/html-comment',
   ],
   transform: { '^.+\\.(ts|js|html)$': 'jest-preset-angular' },
+  preset: '..\\..\\..\\jest.preset.ts',
 };

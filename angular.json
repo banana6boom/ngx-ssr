@@ -30,11 +30,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/ngx-ssr/cache"
-          ],
+          "outputs": ["coverage/libs/ngx-ssr/cache"],
           "options": {
-            "jestConfig": "libs/ngx-ssr/cache/jest.config.js",
+            "jestConfig": "libs/ngx-ssr/cache/jest.config.ts",
             "passWithNoTests": true
           }
         },
@@ -78,11 +76,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/ngx-ssr/platform"
-          ],
+          "outputs": ["coverage/libs/ngx-ssr/platform"],
           "options": {
-            "jestConfig": "libs/ngx-ssr/platform/jest.config.js",
+            "jestConfig": "libs/ngx-ssr/platform/jest.config.ts",
             "passWithNoTests": true
           }
         },
@@ -126,11 +122,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/ngx-ssr/timeout"
-          ],
+          "outputs": ["coverage/libs/ngx-ssr/timeout"],
           "options": {
-            "jestConfig": "libs/ngx-ssr/timeout/jest.config.js",
+            "jestConfig": "libs/ngx-ssr/timeout/jest.config.ts",
             "passWithNoTests": true
           }
         },
@@ -169,9 +163,7 @@
                 "output": "assets/taiga-ui/icons"
               }
             ],
-            "styles": [
-              "apps/rickandmorty/src/styles.less"
-            ],
+            "styles": ["apps/rickandmorty/src/styles.less"],
             "scripts": []
           },
           "configurations": {
@@ -234,11 +226,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/rickandmorty"
-          ],
+          "outputs": ["coverage/apps/rickandmorty"],
           "options": {
-            "jestConfig": "apps/rickandmorty/jest.config.js",
+            "jestConfig": "apps/rickandmorty/jest.config.ts",
             "passWithNoTests": true
           }
         },
@@ -331,11 +321,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/rickandmorty/api"
-          ],
+          "outputs": ["coverage/libs/rickandmorty/api"],
           "options": {
-            "jestConfig": "libs/rickandmorty/api/jest.config.js",
+            "jestConfig": "libs/rickandmorty/api/jest.config.ts",
             "passWithNoTests": true
           }
         },
@@ -371,16 +359,12 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/rickandmorty-e2e/**/*.{js,ts}"
-            ]
+            "lintFilePatterns": ["apps/rickandmorty-e2e/**/*.{js,ts}"]
           }
         }
       },
       "tags": [],
-      "implicitDependencies": [
-        "rickandmorty"
-      ]
+      "implicitDependencies": ["rickandmorty"]
     },
     "rickandmorty-utils": {
       "projectType": "library",
@@ -399,11 +383,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/rickandmorty/utils"
-          ],
+          "outputs": ["coverage/libs/rickandmorty/utils"],
           "options": {
-            "jestConfig": "libs/rickandmorty/utils/jest.config.js",
+            "jestConfig": "libs/rickandmorty/utils/jest.config.ts",
             "passWithNoTests": true
           }
         }

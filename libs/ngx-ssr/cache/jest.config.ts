@@ -1,7 +1,7 @@
 module.exports = {
-  displayName: 'ngx-ssr-platform',
-  preset: '../../../jest.preset.js',
-  setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
+  displayName: 'ngx-ssr-cache',
+
+  setupFilesAfterEnv: ['<rootDir>/test-setup.ts'],
   globals: {
     'ts-jest': {
       stringifyContentPathRegex: '\\.(html|svg)$',
@@ -9,11 +9,12 @@ module.exports = {
       tsconfig: '<rootDir>/tsconfig.spec.json',
     },
   },
-  coverageDirectory: '../../../coverage/libs/ngx-ssr/platform',
+  coverageDirectory: '../../../coverage/libs/ngx-ssr/cache',
   snapshotSerializers: [
     'jest-preset-angular/build/serializers/no-ng-attributes',
     'jest-preset-angular/build/serializers/ng-snapshot',
     'jest-preset-angular/build/serializers/html-comment',
   ],
   transform: { '^.+\\.(ts|js|html)$': 'jest-preset-angular' },
+  preset: '..\\..\\..\\jest.preset.ts',
 };
