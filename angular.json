@@ -30,7 +30,7 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/ngx-ssr/cache"],
+          "outputs": ["{workspaceRoot}/coverage/libs/ngx-ssr/cache"],
           "options": {
             "jestConfig": "libs/ngx-ssr/cache/jest.config.ts",
             "passWithNoTests": true
@@ -76,7 +76,7 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/ngx-ssr/platform"],
+          "outputs": ["{workspaceRoot}/coverage/libs/ngx-ssr/platform"],
           "options": {
             "jestConfig": "libs/ngx-ssr/platform/jest.config.ts",
             "passWithNoTests": true
@@ -122,7 +122,7 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/ngx-ssr/timeout"],
+          "outputs": ["{workspaceRoot}/coverage/libs/ngx-ssr/timeout"],
           "options": {
             "jestConfig": "libs/ngx-ssr/timeout/jest.config.ts",
             "passWithNoTests": true
@@ -226,7 +226,7 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/rickandmorty"],
+          "outputs": ["{workspaceRoot}/coverage/apps/rickandmorty"],
           "options": {
             "jestConfig": "apps/rickandmorty/jest.config.ts",
             "passWithNoTests": true
@@ -321,7 +321,7 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/rickandmorty/api"],
+          "outputs": ["{workspaceRoot}/coverage/libs/rickandmorty/api"],
           "options": {
             "jestConfig": "libs/rickandmorty/api/jest.config.ts",
             "passWithNoTests": true
@@ -383,7 +383,7 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/rickandmorty/utils"],
+          "outputs": ["{workspaceRoot}/coverage/libs/rickandmorty/utils"],
           "options": {
             "jestConfig": "libs/rickandmorty/utils/jest.config.ts",
             "passWithNoTests": true
