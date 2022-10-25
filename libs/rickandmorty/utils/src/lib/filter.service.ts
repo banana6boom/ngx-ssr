@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { debounceTime, takeUntil } from 'rxjs/operators';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { TuiDestroyService } from '@taiga-ui/cdk';
 
 @Injectable()
@@ -10,13 +10,13 @@ export class FilterService {
     private route: ActivatedRoute,
     private router: Router,
     private destroy: TuiDestroyService,
-    private fb: FormBuilder
+    private fb: UntypedFormBuilder
   ) {}
 
   createForm(
-    controlsConfig: Parameters<FormBuilder['group']>[0],
-    options?: Parameters<FormBuilder['group']>[1]
-  ): FormGroup {
+    controlsConfig: Parameters<UntypedFormBuilder['group']>[0],
+    options?: Parameters<UntypedFormBuilder['group']>[1]
+  ): UntypedFormGroup {
     const { queryParams } = this.route.snapshot;
 
     const form = this.fb.group(

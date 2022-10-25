@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Location, LocationFilter, Response } from 'ngx-rickandmorty';
 import { FilterService } from '@ngx-ssr/rickandmorty/utils';
-import { FormGroup } from '@angular/forms';
+import { UntypedFormGroup } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { map } from 'rxjs/operators';
 import { Title } from '@angular/platform-browser';
@@ -16,7 +16,7 @@ import { TuiDestroyService } from '@taiga-ui/cdk';
 })
 export class LocationListComponent {
   readonly locationResponse$: Observable<Response<Location, LocationFilter>>;
-  readonly form: FormGroup;
+  readonly form: UntypedFormGroup;
 
   constructor(filter: FilterService, route: ActivatedRoute, title: Title) {
     title.setTitle('Locations | Rick and Morty');

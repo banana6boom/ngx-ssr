@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Episode, EpisodeFilter, Response } from 'ngx-rickandmorty';
-import { FormGroup } from '@angular/forms';
+import { UntypedFormGroup } from '@angular/forms';
 import { FilterService } from '@ngx-ssr/rickandmorty/utils';
 import { ActivatedRoute } from '@angular/router';
 import { map } from 'rxjs/operators';
@@ -16,7 +16,7 @@ import { TuiDestroyService } from '@taiga-ui/cdk';
 })
 export class EpisodeListComponent {
   readonly episodeResponse$: Observable<Response<Episode, EpisodeFilter>>;
-  readonly form: FormGroup;
+  readonly form: UntypedFormGroup;
 
   constructor(
     private filter: FilterService,

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Character, CharacterFilter, Response } from 'ngx-rickandmorty';
 import { Observable } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
-import { FormGroup } from '@angular/forms';
+import { UntypedFormGroup } from '@angular/forms';
 import { FilterService } from '@ngx-ssr/rickandmorty/utils';
 import { map } from 'rxjs/operators';
 import { Title } from '@angular/platform-browser';
@@ -16,7 +16,7 @@ import { TuiDestroyService } from '@taiga-ui/cdk';
 })
 export class CharacterListComponent {
   readonly characterResponse$: Observable<Response<Character, CharacterFilter>>;
-  readonly form: FormGroup;
+  readonly form: UntypedFormGroup;
 
   constructor(
     private filter: FilterService,
