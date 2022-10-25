@@ -34,9 +34,6 @@
       }
     ]
   },
-  "cli": {
-    "defaultCollection": "@nrwl/angular"
-  },
   "defaultProject": "rickandmorty",
   "generators": {
     "@nrwl/angular": {
