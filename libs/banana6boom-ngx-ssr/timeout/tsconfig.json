@@ -15,5 +15,8 @@
   ],
   "compilerOptions": {
     "target": "es2020"
+  },
+  "paths": {
+    "@banana6boom/ngx-ssr-timeout": ["./src/index.ts"]
   }
 }

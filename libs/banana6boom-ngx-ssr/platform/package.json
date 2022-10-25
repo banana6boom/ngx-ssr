@@ -1,15 +1,15 @@
 {
-  "name": "@banana6boom/ngx-ssr-timeout",
-  "version": "1.0.1",
+  "name": "@banana6boom/ngx-ssr-platform",
+  "version": "1.0.4",
   "keywords": [
     "angular",
     "angulae ssr",
     "universal",
     "angular/universal",
     "ssr",
-    "timeout",
-    "http",
-    "interceptor"
+    "platform",
+    "is-server",
+    "is-browser"
   ],
   "scripts": {
     "build": "ng-packagr -p ng-package.json"

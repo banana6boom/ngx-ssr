@@ -2,6 +2,8 @@
 
 Add 14+ Angular support
 
+_Fork of [@ngx-ssr/timeout](https://www.npmjs.com/package/@ngx-ssr/timeout)_
+
 Install package
 
 ```bash

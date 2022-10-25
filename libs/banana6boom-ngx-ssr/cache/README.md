@@ -1,6 +1,8 @@
 # @banana6boom/ngx-ssr-cache
 
-Add 14+ Angular support
+Add Angular 14+ support
+
+_Fork of [@ngx-ssr/cache](https://www.npmjs.com/package/@ngx-ssr/cache)_
 
 Install package
 
@@ -25,8 +27,7 @@ import { environment } from '../environments/environment';
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}
 ```
 
 HTML caching is also available for express

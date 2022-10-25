@@ -1,14 +1,14 @@
 {
-  "name": "@banana6boom/ngx-ssr-cache",
-  "version": "1.0.0",
+  "name": "@banana6boom/ngx-ssr-timeout",
+  "version": "1.0.3",
   "keywords": [
     "angular",
     "angulae ssr",
     "universal",
     "angular/universal",
     "ssr",
-    "cache",
-    "lru-cache",
+    "timeout",
+    "http",
     "interceptor"
   ],
   "scripts": {

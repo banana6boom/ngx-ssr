@@ -1,19 +1,16 @@
 {
-  "name": "@banana6boom/ngx-ssr-platform",
-  "version": "1.0.0",
+  "name": "@banana6boom/ngx-ssr-cache",
+  "version": "1.0.3",
   "keywords": [
     "angular",
     "angulae ssr",
     "universal",
     "angular/universal",
     "ssr",
-    "platform",
-    "is-server",
-    "is-browser"
+    "cache",
+    "lru-cache",
+    "interceptor"
   ],
-  "scripts": {
-    "build": "ng-packagr -p ng-package.json"
-  },
   "peerDependencies": {
     "@angular/common": ">=14.0.0",
     "@angular/core": ">=14.0.0"

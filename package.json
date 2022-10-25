@@ -28,7 +28,10 @@
     "test": "nx run-many --target test --all",
     "update": "nx migrate latest",
     "workspace-generator": "nx workspace-generator",
-    "postinstall": "ngcc --properties es2020 browser module main"
+    "postinstall": "ngcc --properties es2020 browser module main",
+    "build:cache": "ng-packagr -p libs/banana6boom-ngx-ssr/cache/ng-package.json",
+    "build:platform": "ng-packagr -p libs/banana6boom-ngx-ssr/platform/ng-package.json",
+    "build:timeout": "ng-packagr -p libs/banana6boom-ngx-ssr/timeout/ng-package.json"
   },
   "dependencies": {
     "@angular/animations": "14.2.7",
