@@ -1,0 +1,27 @@
+{
+  "name": "@banana6boom/ngx-ssr-platform",
+  "version": "1.0.0",
+  "keywords": [
+    "angular",
+    "angulae ssr",
+    "universal",
+    "angular/universal",
+    "ssr",
+    "platform",
+    "is-server",
+    "is-browser"
+  ],
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=14.0.0",
+    "@angular/core": ">=14.0.0"
+  },
+  "dependencies": {
+    "tslib": ">=2.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

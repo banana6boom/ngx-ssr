@@ -7,19 +7,14 @@ import { TransferHttpCacheModule } from '@nguniversal/common';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import {
-  iconsPathFactory,
+  tuiIconsPathFactory,
   TUI_ICONS_PATH,
   TuiRootModule,
 } from '@taiga-ui/core';
-import { TUI_SANITIZER } from '@taiga-ui/cdk';
 import { TuiTabsModule } from '@taiga-ui/kit';
 import { NgxSsrCacheModule } from '@ngx-ssr/cache';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-
-const unsafeSanitizer: Sanitizer = {
-  sanitize: (_: any, value: any) => value,
-};
 
 @NgModule({
   declarations: [AppComponent],
@@ -39,12 +34,8 @@ const unsafeSanitizer: Sanitizer = {
   bootstrap: [AppComponent],
   providers: [
     {
-      provide: TUI_SANITIZER,
-      useValue: unsafeSanitizer,
-    },
-    {
       provide: TUI_ICONS_PATH,
-      useValue: iconsPathFactory('assets/taiga-ui/icons/'),
+      useValue: tuiIconsPathFactory('assets/taiga-ui/icons/'),
     },
   ],
 })

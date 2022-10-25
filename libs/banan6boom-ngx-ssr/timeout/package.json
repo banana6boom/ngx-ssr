@@ -1,0 +1,27 @@
+{
+  "name": "@banana6boom/ngx-ssr-timeout",
+  "version": "1.0.1",
+  "keywords": [
+    "angular",
+    "angulae ssr",
+    "universal",
+    "angular/universal",
+    "ssr",
+    "timeout",
+    "http",
+    "interceptor"
+  ],
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=14.0.0",
+    "@angular/core": ">=14.0.0"
+  },
+  "dependencies": {
+    "tslib": ">=2.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
