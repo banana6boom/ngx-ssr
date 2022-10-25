@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   displayName: 'rickandmorty-utils',
 
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   displayName: 'ngx-ssr-cache',
 
   setupFilesAfterEnv: ['<rootDir>/test-setup.ts'],

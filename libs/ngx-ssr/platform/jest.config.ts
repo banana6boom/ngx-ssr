@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   displayName: 'ngx-ssr-platform',
 
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],

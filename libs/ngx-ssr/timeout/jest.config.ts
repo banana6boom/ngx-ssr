@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   displayName: 'ngx-ssr-timeout',
 
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
